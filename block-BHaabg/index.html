@@ -1,15 +1,59 @@
-<!-- ### Exercise
-
-1. Create a simple page having a header, main content, and a footer.
-
-2. Inside the header keep the logo to the left and all the navigation to the right.
-
-3. The header must be fixed at the top of the page.
-
-4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
-
-5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
-
-6. After the gallery section footer will come.
-
-7. Take a circular button at the right bottom corner of the page and keep its position fixed. The button should always take to the top of the page once clicked. -->
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title> Gallery Layout</title>
+        <link rel="stylesheet" href="assests/stylesheet/style.css">
+    </head>
+    <body>
+        <header id="top" class="header">
+            <div class=" clearfix">
+                <a class="logo" href="#"> <img src="assests/media/logo.png" alt="Logo"></a>
+                <nav class="nav">
+                    <a href="#"> Home</a>
+                    <a href="#"> About</a>
+                    <a href="#"> Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main class="main"> 
+            <section class="section">
+                <article class="article clearfix">
+                    <div class="col-1">               
+                        <h2>The Gallery </h2>
+                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam praesentium animi minima natus,
+                         consequatur fuga veritatis soluta est ab quibusdam quasi, 
+                        labore cum deleniti quisquam maxime nobis nihil, officiis pariatur.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam praesentium animi minima natus,
+                         consequatur fuga veritatis soluta est ab quibusdam quasi, 
+                        labore cum deleniti quisquam maxime nobis nihil, officiis pariatur.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam praesentium animi minima natus,
+                         consequatur fuga veritatis soluta est ab quibusdam quasi, 
+                        labore cum deleniti quisquam maxime nobis nihil, officiis pariatur.
+                        </p>
+                  
+                    </div>
+                       <div class="col-2"> 
+                           <img src="assests/media/1.jpg" alt="1">
+                       </div>               
+                </article>
+            </section>
+            <section class="gallery ">
+                <div class="row-1 clearfix"> 
+                    <img class="row" src="assests/media/2.jpg" alt="2">
+                    <img class="row"src="assests/media/3.jpg" alt="3">
+                    <img class="row"src="assests/media/4.jpg" alt="4">
+                </div>
+                <div class="row-2 clearfix" >
+                    <img class="row"src="assests/media/5.jpg" alt="5">
+                    <img class="row"src="assests/media/6.jpg" alt="6">
+                    <img class="row"src="assests/media/7.jpg" alt="7">
+                </div>
+            </section>
+        </main>
+        <footer class="footer clearfix">
+            <p> &copy;AltCampus  All Rights Reserved.</p>
+           <a class="button" href="#top"> <button>Top </button> </a>
+        </footer>
+    </body>
+</html>
