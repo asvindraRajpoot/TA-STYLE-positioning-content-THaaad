@@ -1,0 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Generic styles*/
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+
+}
+body{
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+/***  Customs styles***********/
+header{
+    background-color:#5385C1;
+    padding-bottom: 50px;
+}
+.clearfix::before,.clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+.nav{
+    float: right;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.row-1 h2{
+    float: left;
+    color: white;
+}
+.row-2{
+    text-align: center;
+    margin: 60px 0;
+    color: white;
+}
+.row-2 h1{
+    font-size: 50px;
+    margin: 10px 0;
+}
+.row-2 h3{
+    font-size: 12px;
+}
+.section2{
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.col-1,.col-2,.col-3{
+    width: 30%;
+    float: left;
+    margin: 10px 1.5%;
+    padding: 10px 20px;
+}
+.col .col-heading{
+    font-size: 20px;
+    color: blue;
+    margin-bottom: 10px;
+}
+.col p{
+    margin: 20px 0;
+}
+.col a,.article a{
+    font-size: 12px;
+    background-color:#5385C1;
+    color: white;
+    padding: 10px 15px ;
+    text-decoration: none;
+}
+.section3{
+    background-color: #5385C1;
+    padding-bottom: 30px;
+}
+.section3-row1{
+    text-align: center;
+    color: white;
+    margin: 30px 0;
+    padding: 10px 0;
+}
+.section3-row1 h2{
+    font-size: 40px;
+    margin: 10px 0;
+}
+.img-col{
+    border: 2px solid rgba(233, 232, 232, 0.836);
+    width: 20%;
+    margin: 10px 2.5%;
+    text-align: center;
+    color: white;
+    float: left;
+}
+.img-col img{
+    border-radius: 50%;
+   margin-top: 20px;
+   margin-bottom: 5px;
+   padding-top: 20px;
+}
+.img-col h2{
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.img-col h3{
+    color: whitesmoke;
+    font-size: 12px;
+  
+    margin-bottom: 20px; 
+    padding-bottom: 20px;
+}
+.section4{
+    background-color: white;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.section4-row1{
+    text-align: center;
+    margin: 30px 0;
+    padding: 10px 0;
+    color: #5385C1;
+}
+.section4-row1 h2{
+    font-size: 40px;
+    margin: 10px 0;
+}
+.section4-row1 h3{
+    font-size: 15px;
+    color: gray;
+}
+.article{
+    width: 45%;
+    margin:15px 2.5%;
+    padding: 10px;
+    float: left;
+}
+.article h2{
+    margin: 15px 0;
+    font-size: 20px;
+    color: #5385C1;
+}
+.article p{
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: gray;
+}
+.article img{
+    width: 100%;
+}
+.footer{
+    background-color:white;
+    margin: 0 145px;
+    border-top:1px solid lightgray;
+}
+.footer p{
+    float: left;
+    color: gray;
+    font-size: 15px;
+}
+.footer nav{
+    float: right;
+}
+.footer .nav a{
+    text-decoration: none;
+    color: #5385C1;
+}
